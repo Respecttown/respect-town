@@ -1,99 +1,122 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#100b18">
-<title>Respect Town | RT</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100b18"><title>Respect Town | RT</title>
 <style>
-:root{--bg:#0b0910;--panel:#15111d;--panel2:#1d1728;--purple:#9b5cff;--purple2:#6d35c7;--text:#f5f0ff;--muted:#b8adc8;--line:#30243f}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#28153e 0,transparent 38%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
-a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#0b0910eF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}.brand{font-weight:900;letter-spacing:1px;font-size:20px}.brand span{color:var(--purple)}
-nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}nav a{font-size:13px;color:var(--muted)}nav a:hover{color:white}
-.menu{display:none;background:var(--panel2);border:1px solid var(--line);color:white;padding:8px 12px;border-radius:10px}
-.hero{padding:82px 0 60px;text-align:center}.eyebrow{display:inline-block;color:#d8c2ff;border:1px solid #67439a;background:#241536;padding:5px 14px;border-radius:99px;font-size:12px}
-h1{font-size:clamp(36px,7vw,66px);line-height:1.2;margin:22px 0 12px;font-weight:900}h1 span{color:var(--purple)}.hero p{color:var(--muted);max-width:650px;margin:0 auto 26px}
-.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:11px 20px;border-radius:12px;background:linear-gradient(135deg,var(--purple),var(--purple2));font-weight:700;border:1px solid #a77aff}.btn.secondary{background:var(--panel);border-color:var(--line);color:var(--text)}
-section{padding:34px 0 54px}.section-head{text-align:center;margin-bottom:24px}.section-head h2{font-size:28px;margin:0 0 5px}.section-head p{margin:0;color:var(--muted);font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:17px;padding:20px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#7650a6}.icon{width:42px;height:42px;border-radius:12px;background:#33204c;color:#d5b8ff;display:grid;place-items:center;font-size:21px;margin-bottom:12px}.card h3{margin:0 0 5px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:13px}.tag{display:inline-block;margin-top:13px;color:#d8c2ff;font-size:12px}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.notice{color:var(--muted);font-size:13px;margin-top:10px}
-.rule-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.rule{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px}.rule b{display:block;margin-bottom:3px}.rule span{font-size:13px;color:var(--muted)}
-details{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:13px 16px;margin:10px 0}summary{cursor:pointer;font-weight:700}details p{color:var(--muted);font-size:13px;margin-bottom:0}
-footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px;text-align:center}
-.lang{border:1px solid var(--line);background:var(--panel);color:white;border-radius:10px;padding:8px 11px;cursor:pointer}
-[dir=ltr] body{text-align:left}[dir=ltr] .hero{text-align:center}
-@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}nav{display:none;position:absolute;top:65px;right:4%;left:4%;background:var(--panel);padding:16px;border:1px solid var(--line);border-radius:14px;flex-direction:column;align-items:stretch}.menu{display:block}nav.open{display:flex}.nav{flex-wrap:wrap}.rule-list{grid-template-columns:1fr}}
-@media(max-width:440px){.grid{grid-template-columns:1fr}.hero{padding:58px 0 40px}}
-</style>
-</head>
+:root{--bg:#0b0910;--panel:#15111d;--panel2:#1d1728;--purple:#9b5cff;--text:#f5f0ff;--muted:#b8adc8;--line:#30243f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#28153e 0,transparent 38%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.85}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}header{position:sticky;top:0;z-index:10;background:#0b0910ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 0}.brand{font-weight:900;font-size:19px;white-space:nowrap}.brand span,h1 span{color:var(--purple)}
+nav{display:flex;gap:16px;flex-wrap:wrap}nav a{font-size:13px;color:var(--muted)}nav a:hover{color:white}.menu,.lang{background:var(--panel2);border:1px solid var(--line);color:white;padding:8px 12px;border-radius:10px}.menu{display:none}
+.hero{text-align:center;padding:68px 0 48px}.eyebrow{display:inline-block;color:#decaff;background:#241536;border:1px solid #67439a;border-radius:99px;padding:4px 13px;font-size:12px}
+h1{font-size:clamp(36px,7vw,64px);line-height:1.2;margin:18px 0 8px}.hero p{color:var(--muted);max-width:720px;margin:0 auto 22px}.btn{display:inline-block;padding:10px 18px;border-radius:11px;background:linear-gradient(135deg,var(--purple),#6d35c7);font-weight:bold}
+section{padding:28px 0 42px}.head{text-align:center;margin-bottom:20px}.head h2{margin:0;font-size:27px}.head p{margin:4px 0;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.card,.panel{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:18px}.card h3{margin:5px 0}.card p{color:var(--muted);font-size:13px;margin:0}.ico{font-size:23px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:13px 16px;margin:10px 0}summary{cursor:pointer;font-weight:bold;color:#e9dcff}details p,details li{color:var(--muted);font-size:13px}details ul{padding-right:22px;margin-bottom:4px}.note{border-right:3px solid var(--purple);padding:10px 13px;background:#211632;border-radius:8px;color:#d9c8ef;font-size:13px;margin-top:14px}
+footer{text-align:center;border-top:1px solid var(--line);padding:22px;color:var(--muted);font-size:12px}
+@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}.menu{display:block}nav{display:none;position:absolute;top:62px;right:4%;left:4%;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:14px;flex-direction:column}nav.open{display:flex}}
+@media(max-width:460px){.grid{grid-template-columns:1fr}.hero{padding-top:48px}}
+</style></head>
 <body>
 <header><div class="wrap nav">
-  <a class="brand" href="#home">RESPECT <span>TOWN</span> <small style="font-size:11px;color:#b8adc8">| RT</small></a>
-  <button class="menu" id="menuBtn" aria-label="فتح القائمة">☰</button>
-  <nav id="navLinks">
-    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-    <a href="#sections" data-ar="الأقسام" data-en="Sections">الأقسام</a>
-    <a href="#rules" data-ar="القوانين" data-en="Rules">القوانين</a>
-    <a href="#faq" data-ar="الأسئلة" data-en="FAQ">الأسئلة</a>
-    <a href="#contact" data-ar="التواصل" data-en="Contact">التواصل</a>
-  </nav>
-  <button class="lang" id="langBtn">English</button>
+<a class="brand" href="#home">RESPECT <span>TOWN</span> | RT</a>
+<button class="menu" id="menu">☰</button>
+<nav id="nav"><a href="#sections" data-ar="الأقسام" data-en="Sections">الأقسام</a><a href="#general" data-ar="القوانين العامة" data-en="General">القوانين العامة</a><a href="#rp" data-ar="قوانين RP" data-en="Roleplay">قوانين RP</a><a href="#sectors" data-ar="القطاعات" data-en="Departments">القطاعات</a><a href="#penalties" data-ar="العقوبات" data-en="Penalties">العقوبات</a><a href="#staff" data-ar="الإدارة" data-en="Staff">الإدارة</a></nav>
+<button class="lang" id="lang">English</button>
 </div></header>
-
 <main>
-<section class="hero wrap" id="home">
-  <span class="eyebrow" data-ar="مرحباً بك في عالم ريسبيكت" data-en="WELCOME TO RESPECT TOWN">مرحباً بك في عالم ريسبيكت</span>
-  <h1>RESPECT <span>TOWN</span></h1>
-  <p data-ar="الموقع الرسمي لقوانين وتعليمات مدينة Respect Town. اقرأ الأنظمة قبل المشاركة، وتابع آخر التحديثات من مكان واحد." data-en="The official guide to Respect Town rules and information. Read the guidelines before joining and find important updates in one place.">الموقع الرسمي لقوانين وتعليمات مدينة Respect Town. اقرأ الأنظمة قبل المشاركة، وتابع آخر التحديثات من مكان واحد.</p>
-  <div class="actions"><a class="btn" href="#rules" data-ar="استعرض القوانين" data-en="Explore the rules">استعرض القوانين</a><a class="btn secondary" href="#sections" data-ar="تصفح الأقسام" data-en="Browse sections">تصفح الأقسام</a></div>
+<section class="hero wrap" id="home"><span class="eyebrow" data-ar="الدليل الرسمي لمدينة ريسبيكت" data-en="THE OFFICIAL RESPECT TOWN GUIDE">الدليل الرسمي لمدينة ريسبيكت</span><h1>RESPECT <span>TOWN</span></h1>
+<p data-ar="أهلاً بك في الدليل الرسمي لمدينة Respect Town. اقرأ القوانين والتزم بها للحفاظ على تجربة لعب عادلة وممتعة للجميع." data-en="Welcome to the official Respect Town guide. Read and follow the rules to keep the roleplay experience fair and enjoyable for everyone.">أهلاً بك في الدليل الرسمي لمدينة Respect Town. اقرأ القوانين والتزم بها للحفاظ على تجربة لعب عادلة وممتعة للجميع.</p><a class="btn" href="#sections" data-ar="ابدأ التصفح" data-en="Explore the guide">ابدأ التصفح</a></section>
+<section class="wrap" id="sections"><div class="head"><h2 data-ar="أقسام الدليل" data-en="Guide Sections">أقسام الدليل</h2><p data-ar="اختر القسم المطلوب للوصول إلى تعليماته." data-en="Choose a section to view its guidelines.">اختر القسم المطلوب للوصول إلى تعليماته.</p></div>
+<div class="grid">
+<a class="card" href="#general"><div class="ico">📜</div><h3 data-ar="القوانين العامة" data-en="General Rules">القوانين العامة</h3><p data-ar="قواعد المجتمع والسلوك." data-en="Community conduct and standards.">قواعد المجتمع والسلوك.</p></a>
+<a class="card" href="#rp"><div class="ico">🎭</div><h3>Roleplay</h3><p data-ar="أساسيات تقمص الشخصية والتفاعل." data-en="Roleplay fundamentals and interactions.">أساسيات تقمص الشخصية والتفاعل.</p></a>
+<a class="card" href="#police"><div class="ico">👮</div><h3 data-ar="الشرطة" data-en="Police">الشرطة</h3><p data-ar="ضوابط القطاع الأمني." data-en="Law enforcement guidelines.">ضوابط القطاع الأمني.</p></a>
+<a class="card" href="#ems"><div class="ico">🚑</div><h3 data-ar="الإسعاف" data-en="EMS">الإسعاف</h3><p data-ar="ضوابط القطاع الطبي." data-en="Medical department guidelines.">ضوابط القطاع الطبي.</p></a>
+<a class="card" href="#gangs"><div class="ico">🛡️</div><h3 data-ar="العصابات" data-en="Organizations">العصابات</h3><p data-ar="قواعد التنظيمات المعتمدة." data-en="Approved organization rules.">قواعد التنظيمات المعتمدة.</p></a>
+<a class="card" href="#staff"><div class="ico">⭐</div><h3 data-ar="الإدارة" data-en="Administration">الإدارة</h3><p data-ar="واجبات وصلاحيات فريق الإدارة." data-en="Staff duties and responsibilities.">واجبات وصلاحيات فريق الإدارة.</p></a>
+</div></section>
+
+<section class="wrap" id="general"><div class="head"><h2>📜 <span data-ar="القوانين العامة" data-en="General Rules">القوانين العامة</span></h2></div>
+<details open><summary data-ar="الاحترام والتعامل" data-en="Respect and Conduct">الاحترام والتعامل</summary><ul>
+<li data-ar="احترام جميع اللاعبين والإدارة واجب، ويمنع السب أو التهديد أو الاستفزاز المتعمد." data-en="Respect all players and staff. Insults, threats, and deliberate harassment are prohibited.">احترام جميع اللاعبين والإدارة واجب، ويمنع السب أو التهديد أو الاستفزاز المتعمد.</li>
+<li data-ar="يمنع نشر المعلومات الشخصية أو التشهير أو التحرش بأي عضو." data-en="Sharing private information, doxxing, or harassing members is prohibited.">يمنع نشر المعلومات الشخصية أو التشهير أو التحرش بأي عضو.</li>
+<li data-ar="يمنع استغلال الأخطاء التقنية أو الثغرات، ويجب الإبلاغ عنها للإدارة." data-en="Do not exploit bugs; report them to staff.">يمنع استغلال الأخطاء التقنية أو الثغرات، ويجب الإبلاغ عنها للإدارة.</li>
+<li data-ar="يمنع انتحال شخصية لاعب أو إداري أو جهة رسمية." data-en="Impersonating a player, staff member, or official department is prohibited.">يمنع انتحال شخصية لاعب أو إداري أو جهة رسمية.</li>
+</ul></details>
+<details><summary data-ar="الحسابات واللعب النزيه" data-en="Accounts and Fair Play">الحسابات واللعب النزيه</summary><ul>
+<li data-ar="يمنع استخدام البرامج أو الأدوات الخارجية التي تمنح أفضلية غير عادلة." data-en="Cheats or third-party tools that provide unfair advantages are prohibited.">يمنع استخدام البرامج أو الأدوات الخارجية التي تمنح أفضلية غير عادلة.</li>
+<li data-ar="يمنع استغلال الحسابات البديلة للتحايل على العقوبات أو الأنظمة." data-en="Do not use alternate accounts to evade penalties or systems.">يمنع استغلال الحسابات البديلة للتحايل على العقوبات أو الأنظمة.</li>
+<li data-ar="يمنع تعطيل اللعب أو إفساد تجربة الآخرين بشكل متعمد." data-en="Deliberately disrupting other players' experience is prohibited.">يمنع تعطيل اللعب أو إفساد تجربة الآخرين بشكل متعمد.</li>
+</ul></details>
+<details><summary data-ar="التواصل والشكاوى" data-en="Communication and Reports">التواصل والشكاوى</summary><ul>
+<li data-ar="استخدم القنوات المخصصة للبلاغات والتذاكر، وقدّم شرحاً واضحاً ومحترماً." data-en="Use the designated report and ticket channels; explain issues clearly and respectfully.">استخدم القنوات المخصصة للبلاغات والتذاكر، وقدّم شرحاً واضحاً ومحترماً.</li>
+<li data-ar="يمنع إزعاج الإدارة بالمنشن المتكرر أو فتح تذاكر مكررة للموضوع نفسه." data-en="Do not repeatedly ping staff or open duplicate tickets for the same issue.">يمنع إزعاج الإدارة بالمنشن المتكرر أو فتح تذاكر مكررة للموضوع نفسه.</li>
+<li data-ar="لا تنشر محادثات التذاكر أو بيانات الأعضاء دون إذن." data-en="Do not publish ticket conversations or member information without permission.">لا تنشر محادثات التذاكر أو بيانات الأعضاء دون إذن.</li>
+</ul></details></section>
+
+<section class="wrap" id="rp"><div class="head"><h2>🎭 Roleplay</h2><p data-ar="قواعد أساسية للحفاظ على جودة التمثيل." data-en="Core standards for quality roleplay.">قواعد أساسية للحفاظ على جودة التمثيل.</p></div>
+<details open><summary>Fear RP</summary><p data-ar="يجب أن تتصرف شخصيتك بما يتناسب مع الخطر والتهديد داخل السيناريو، وألا تتجاهل المواقف الخطرة دون سبب منطقي." data-en="Your character should react reasonably to danger and threats within a scenario.">يجب أن تتصرف شخصيتك بما يتناسب مع الخطر والتهديد داخل السيناريو، وألا تتجاهل المواقف الخطرة دون سبب منطقي.</p></details>
+<details><summary>Fail RP</summary><p data-ar="يمنع القيام بتصرفات غير منطقية تكسر واقعية السيناريو أو تتجاهل طبيعة الشخصية والموقف." data-en="Avoid unrealistic actions that break the scenario or ignore the character and situation.">يمنع القيام بتصرفات غير منطقية تكسر واقعية السيناريو أو تتجاهل طبيعة الشخصية والموقف.</p></details>
+<details><summary>Meta Gaming</summary><p data-ar="يمنع استخدام معلومات حصلت عليها خارج اللعبة أو من البث أو المحادثات الخارجية داخل أحداث الشخصية." data-en="Do not use out-of-character information, streams, or external chats in character.">يمنع استخدام معلومات حصلت عليها خارج اللعبة أو من البث أو المحادثات الخارجية داخل أحداث الشخصية.</p></details>
+<details><summary>Power Gaming</summary><p data-ar="يمنع فرض أفعال أو نتائج على شخصية لاعب آخر دون منحه فرصة مناسبة للتفاعل، كما يمنع استغلال ميكانيكيات اللعبة بصورة غير واقعية." data-en="Do not force actions or outcomes on another player's character without a fair chance to respond.">يمنع فرض أفعال أو نتائج على شخصية لاعب آخر دون منحه فرصة مناسبة للتفاعل، كما يمنع استغلال ميكانيكيات اللعبة بصورة غير واقعية.</p></details>
+<details><summary>RDM / VDM</summary><p data-ar="يمنع الاعتداء على الآخرين أو استخدام المركبة لإيذائهم دون سبب وسياق تمثيلي مقبول وفق أنظمة المدينة." data-en="Attacking players or using vehicles to harm them without valid roleplay context is prohibited.">يمنع الاعتداء على الآخرين أو استخدام المركبة لإيذائهم دون سبب وسياق تمثيلي مقبول وفق أنظمة المدينة.</p></details>
+<details><summary data-ar="الخروج عن الشخصية" data-en="Breaking Character">الخروج عن الشخصية</summary><p data-ar="حافظ على الشخصية أثناء السيناريو، واستخدم القنوات المخصصة للتواصل الإداري أو حل الخلافات خارج التمثيل." data-en="Stay in character during scenarios; use designated staff channels for out-of-character issues.">حافظ على الشخصية أثناء السيناريو، واستخدم القنوات المخصصة للتواصل الإداري أو حل الخلافات خارج التمثيل.</p></details>
 </section>
 
-<section class="wrap" id="sections">
- <div class="section-head"><h2 data-ar="أقسام المدينة" data-en="Town Sections">أقسام المدينة</h2><p data-ar="كل ما تحتاجه للوصول إلى المعلومات المهمة." data-en="Everything you need, organized in one place.">كل ما تحتاجه للوصول إلى المعلومات المهمة.</p></div>
- <div class="grid">
-  <a class="card" href="#rules"><div class="icon">📜</div><h3 data-ar="القوانين العامة" data-en="General Rules">القوانين العامة</h3><p data-ar="التعليمات الأساسية لجميع أعضاء المدينة." data-en="Essential guidelines for everyone in the community.">التعليمات الأساسية لجميع أعضاء المدينة.</p><span class="tag" data-ar="عرض التفاصيل ←" data-en="View details →">عرض التفاصيل ←</span></a>
-  <a class="card" href="#police"><div class="icon">👮</div><h3 data-ar="قوانين الشرطة" data-en="Police Rules">قوانين الشرطة</h3><p data-ar="مسؤوليات وتعليمات القطاع الأمني." data-en="Guidelines and responsibilities for law enforcement.">مسؤوليات وتعليمات القطاع الأمني.</p><span class="tag" data-ar="عرض التفاصيل ←" data-en="View details →">عرض التفاصيل ←</span></a>
-  <a class="card" href="#ems"><div class="icon">🚑</div><h3 data-ar="قوانين الإسعاف" data-en="EMS Rules">قوانين الإسعاف</h3><p data-ar="تنظيم العمل الطبي والتعامل مع البلاغات." data-en="Medical service and emergency response guidelines.">تنظيم العمل الطبي والتعامل مع البلاغات.</p><span class="tag" data-ar="عرض التفاصيل ←" data-en="View details →">عرض التفاصيل ←</span></a>
-  <a class="card" href="#gangs"><div class="icon">🛡️</div><h3 data-ar="قوانين العصابات" data-en="Gang Rules">قوانين العصابات</h3><p data-ar="ضوابط التنظيمات والتفاعل داخل المدينة." data-en="Rules for groups and roleplay interactions.">ضوابط التنظيمات والتفاعل داخل المدينة.</p><span class="tag" data-ar="عرض التفاصيل ←" data-en="View details →">عرض التفاصيل ←</span></a>
-  <a class="card" href="#applications"><div class="icon">📝</div><h3 data-ar="التقديمات والتفعيل" data-en="Applications">التقديمات والتفعيل</h3><p data-ar="معلومات التقديم ومتطلبات الانضمام." data-en="Application information and joining requirements.">معلومات التقديم ومتطلبات الانضمام.</p><span class="tag" data-ar="عرض التفاصيل ←" data-en="View details →">عرض التفاصيل ←</span></a>
-  <a class="card" href="#staff"><div class="icon">⭐</div><h3 data-ar="الإدارة" data-en="Administration">الإدارة</h3><p data-ar="التعريف بفريق الإدارة ومسؤولياته." data-en="Meet the administration team and its responsibilities.">التعريف بفريق الإدارة ومسؤولياته.</p><span class="tag" data-ar="عرض التفاصيل ←" data-en="View details →">عرض التفاصيل ←</span></a>
- </div>
-</section>
+<section class="wrap" id="sectors"><div class="head"><h2 data-ar="قوانين القطاعات" data-en="Department Rules">قوانين القطاعات</h2></div>
+<div id="police"><details open><summary>👮 <span data-ar="قوانين الشرطة" data-en="Police Rules">قوانين الشرطة</span></summary><ul>
+<li data-ar="الالتزام بالتسلسل الإداري والأوامر الرسمية الصادرة من الرتب المخولة." data-en="Follow the chain of command and official instructions from authorized ranks.">الالتزام بالتسلسل الإداري والأوامر الرسمية الصادرة من الرتب المخولة.</li>
+<li data-ar="التعامل مع المدنيين باحترام وحياد، وعدم إساءة استخدام الصلاحيات." data-en="Treat civilians respectfully and impartially; never abuse authority.">التعامل مع المدنيين باحترام وحياد، وعدم إساءة استخدام الصلاحيات.</li>
+<li data-ar="توثيق الإجراءات المهمة واتباع الإجراءات المعتمدة في المدينة." data-en="Document important actions and follow approved city procedures.">توثيق الإجراءات المهمة واتباع الإجراءات المعتمدة في المدينة.</li>
+<li data-ar="يمنع استخدام ممتلكات أو مركبات القطاع لأغراض شخصية غير مصرح بها." data-en="Do not use department property or vehicles for unauthorized personal purposes.">يمنع استخدام ممتلكات أو مركبات القطاع لأغراض شخصية غير مصرح بها.</li>
+<li data-ar="الحفاظ على سرية معلومات العمل وعدم تسريب بيانات البلاغات أو الأعضاء." data-en="Keep operational information confidential and do not leak reports or member data.">الحفاظ على سرية معلومات العمل وعدم تسريب بيانات البلاغات أو الأعضاء.</li>
+</ul></details></div>
+<div id="ems"><details><summary>🚑 <span data-ar="قوانين الإسعاف" data-en="EMS Rules">قوانين الإسعاف</span></summary><ul>
+<li data-ar="تقديم المساعدة للحالات وفق الأولوية والإجراءات الطبية المعتمدة داخل المدينة." data-en="Assist patients according to priority and approved in-city medical procedures.">تقديم المساعدة للحالات وفق الأولوية والإجراءات الطبية المعتمدة داخل المدينة.</li>
+<li data-ar="الالتزام بالزي والمركبات الرسمية أثناء المناوبة." data-en="Wear approved uniforms and use official vehicles while on duty.">الالتزام بالزي والمركبات الرسمية أثناء المناوبة.</li>
+<li data-ar="يمنع استغلال الوظيفة أو طلب مقابل غير مصرح به لتقديم الخدمة." data-en="Do not misuse the role or demand unauthorized payment for services.">يمنع استغلال الوظيفة أو طلب مقابل غير مصرح به لتقديم الخدمة.</li>
+<li data-ar="احترام خصوصية المصابين وعدم نشر معلوماتهم." data-en="Respect patient privacy and do not disclose their information.">احترام خصوصية المصابين وعدم نشر معلوماتهم.</li>
+<li data-ar="التنسيق مع الجهات المختصة عند وجود موقع غير آمن." data-en="Coordinate with relevant departments when a scene is unsafe.">التنسيق مع الجهات المختصة عند وجود موقع غير آمن.</li>
+</ul></details></div>
+<div id="gangs"><details><summary>🛡️ <span data-ar="قوانين العصابات والتنظيمات" data-en="Gang and Organization Rules">قوانين العصابات والتنظيمات</span></summary><ul>
+<li data-ar="يجب اعتماد التنظيم من الإدارة قبل استخدام اسمه أو صفته الرسمية داخل المدينة." data-en="Organizations must be approved by staff before using an official identity in the city.">يجب اعتماد التنظيم من الإدارة قبل استخدام اسمه أو صفته الرسمية داخل المدينة.</li>
+<li data-ar="يلتزم الأعضاء بقوانين المدينة وبقرارات الإدارة المنظمة للأنشطة." data-en="Members must follow city rules and staff decisions governing activities.">يلتزم الأعضاء بقوانين المدينة وبقرارات الإدارة المنظمة للأنشطة.</li>
+<li data-ar="يمنع إجبار اللاعبين على الانضمام أو تهديدهم خارج إطار السيناريو المقبول." data-en="Do not coerce or threaten players into joining outside acceptable roleplay.">يمنع إجبار اللاعبين على الانضمام أو تهديدهم خارج إطار السيناريو المقبول.</li>
+<li data-ar="يمنع استخدام اسم أو شعار تنظيم آخر بقصد التضليل أو إثارة المشاكل." data-en="Do not impersonate another organization or use its identity to cause trouble.">يمنع استخدام اسم أو شعار تنظيم آخر بقصد التضليل أو إثارة المشاكل.</li>
+<li data-ar="تُحل الخلافات التنظيمية عبر القنوات الرسمية، ولا يحق لأي تنظيم تجاوز أنظمة المدينة." data-en="Resolve organization disputes through official channels; no group is above city rules.">تُحل الخلافات التنظيمية عبر القنوات الرسمية، ولا يحق لأي تنظيم تجاوز أنظمة المدينة.</li>
+</ul></details></div></section>
 
-<section class="wrap" id="rules">
- <div class="section-head"><h2 data-ar="القوانين العامة" data-en="General Rules">القوانين العامة</h2><p data-ar="هذه مساحة مبدئية؛ استبدل النصوص بالقوانين الرسمية المعتمدة في سيرفرك." data-en="Starter content. Replace these examples with your server's approved rules.">هذه مساحة مبدئية؛ استبدل النصوص بالقوانين الرسمية المعتمدة في سيرفرك.</p></div>
- <div class="panel"><div class="rule-list">
-  <div class="rule"><b data-ar="الاحترام المتبادل" data-en="Mutual Respect">الاحترام المتبادل</b><span data-ar="احترم جميع الأعضاء والإدارة، وابتعد عن الإساءة والاستفزاز." data-en="Treat all members and staff respectfully.">احترم جميع الأعضاء والإدارة، وابتعد عن الإساءة والاستفزاز.</span></div>
-  <div class="rule"><b data-ar="اتباع التعليمات" data-en="Follow Guidelines">اتباع التعليمات</b><span data-ar="التزم بالتعليمات والإعلانات الرسمية الصادرة من الإدارة." data-en="Follow official instructions and announcements.">التزم بالتعليمات والإعلانات الرسمية الصادرة من الإدارة.</span></div>
-  <div class="rule"><b data-ar="منع استغلال الثغرات" data-en="No Exploits">منع استغلال الثغرات</b><span data-ar="يمنع استغلال الأخطاء أو الأنظمة للحصول على أفضلية غير عادلة." data-en="Do not exploit bugs or systems for unfair advantages.">يمنع استغلال الأخطاء أو الأنظمة للحصول على أفضلية غير عادلة.</span></div>
-  <div class="rule"><b data-ar="التزم بتجربة RP" data-en="Roleplay Quality">التزم بتجربة RP</b><span data-ar="حافظ على تفاعل واقعي ومتناسق مع أحداث المدينة." data-en="Keep interactions consistent with the roleplay environment.">حافظ على تفاعل واقعي ومتناسق مع أحداث المدينة.</span></div>
- </div><p class="notice" data-ar="ملاحظة: النصوص أعلاه أمثلة أولية وليست قوانين رسمية نهائية." data-en="Note: These are starter examples, not your final official rules.">ملاحظة: النصوص أعلاه أمثلة أولية وليست قوانين رسمية نهائية.</p></div>
-</section>
+<section class="wrap" id="staff"><div class="head"><h2>⭐ <span data-ar="قوانين الإدارة" data-en="Staff Rules">قوانين الإدارة</span></h2></div>
+<details open><summary data-ar="النزاهة والمسؤولية" data-en="Integrity and Responsibility">النزاهة والمسؤولية</summary><ul>
+<li data-ar="يجب على الإداري الالتزام بالحياد وعدم استغلال الرتبة لمصلحة شخصية أو لمصلحة الأصدقاء." data-en="Staff must remain impartial and never use rank for personal or friends' benefit.">يجب على الإداري الالتزام بالحياد وعدم استغلال الرتبة لمصلحة شخصية أو لمصلحة الأصدقاء.</li>
+<li data-ar="تُستخدم الصلاحيات الإدارية عند الحاجة ووفق الأنظمة، مع توضيح سبب الإجراء." data-en="Use staff permissions only when needed and according to policy, explaining the reason.">تُستخدم الصلاحيات الإدارية عند الحاجة ووفق الأنظمة، مع توضيح سبب الإجراء.</li>
+<li data-ar="يمنع إفشاء محتوى الاجتماعات أو التذاكر أو المعلومات الداخلية." data-en="Do not disclose meetings, tickets, or internal information.">يمنع إفشاء محتوى الاجتماعات أو التذاكر أو المعلومات الداخلية.</li>
+<li data-ar="يجب احترام التسلسل الإداري ورفع الاعتراضات عبر القنوات المناسبة." data-en="Respect the staff hierarchy and raise concerns through proper channels.">يجب احترام التسلسل الإداري ورفع الاعتراضات عبر القنوات المناسبة.</li>
+<li data-ar="يمنع إعطاء وعود أو قرارات باسم الإدارة دون تفويض." data-en="Do not make promises or decisions on behalf of management without authorization.">يمنع إعطاء وعود أو قرارات باسم الإدارة دون تفويض.</li>
+<li data-ar="على الإداري توثيق الحالات المهمة والتعامل مع جميع التذاكر بأدب وعدالة." data-en="Staff should document important cases and handle tickets politely and fairly.">على الإداري توثيق الحالات المهمة والتعامل مع جميع التذاكر بأدب وعدالة.</li>
+</ul></details></section>
 
-<section class="wrap" id="police"><div class="section-head"><h2>👮 <span data-ar="قوانين الشرطة" data-en="Police Rules">قوانين الشرطة</span></h2></div><div class="panel"><p data-ar="أضف هنا قوانين الشرطة، الرتب، الصلاحيات، وإجراءات التعامل مع البلاغات." data-en="Add police rules, ranks, permissions, and dispatch procedures here.">أضف هنا قوانين الشرطة، الرتب، الصلاحيات، وإجراءات التعامل مع البلاغات.</p></div></section>
-<section class="wrap" id="ems"><div class="section-head"><h2>🚑 <span data-ar="قوانين الإسعاف" data-en="EMS Rules">قوانين الإسعاف</span></h2></div><div class="panel"><p data-ar="أضف هنا قوانين الإسعاف، آلية استقبال الحالات، وأوقات الخدمة." data-en="Add EMS rules, patient handling guidance, and service procedures here.">أضف هنا قوانين الإسعاف، آلية استقبال الحالات، وأوقات الخدمة.</p></div></section>
-<section class="wrap" id="gangs"><div class="section-head"><h2>🛡️ <span data-ar="قوانين العصابات" data-en="Gang Rules">قوانين العصابات</span></h2></div><div class="panel"><p data-ar="أضف هنا قوانين العصابات والتنظيمات وشروط اعتمادها." data-en="Add gang and organization rules and approval requirements here.">أضف هنا قوانين العصابات والتنظيمات وشروط اعتمادها.</p></div></section>
-<section class="wrap" id="applications"><div class="section-head"><h2>📝 <span data-ar="التقديمات والتفعيل" data-en="Applications">التقديمات والتفعيل</span></h2></div><div class="panel"><p data-ar="ضع هنا روابط التقديم والتفعيل الرسمية الخاصة بسيرفر الديسكورد." data-en="Place your official Discord application and activation links here.">ضع هنا روابط التقديم والتفعيل الرسمية الخاصة بسيرفر الديسكورد.</p><p class="notice" data-ar="لم تتم إضافة روابط تقديم حتى الآن." data-en="No application links have been added yet.">لم تتم إضافة روابط تقديم حتى الآن.</p></div></section>
-<section class="wrap" id="staff"><div class="section-head"><h2>⭐ <span data-ar="الإدارة" data-en="Administration">الإدارة</span></h2></div><div class="panel"><p data-ar="أضف أسماء المؤسسين والإدارة والرتب هنا بعد اعتماد القائمة." data-en="Add founder, management, and staff names here once the list is confirmed.">أضف أسماء المؤسسين والإدارة والرتب هنا بعد اعتماد القائمة.</p></div></section>
-<section class="wrap" id="faq"><div class="section-head"><h2 data-ar="الأسئلة الشائعة" data-en="Frequently Asked Questions">الأسئلة الشائعة</h2></div>
- <details><summary data-ar="أين أجد القوانين؟" data-en="Where can I find the rules?">أين أجد القوانين؟</summary><p data-ar="يمكنك تصفح الأقسام من قائمة الموقع." data-en="Browse the sections using the website menu.">يمكنك تصفح الأقسام من قائمة الموقع.</p></details>
- <details><summary data-ar="هل القوانين قابلة للتحديث؟" data-en="Can the rules be updated?">هل القوانين قابلة للتحديث؟</summary><p data-ar="نعم، يمكن لمسؤول الموقع تعديل الملف ونشر النسخة الجديدة." data-en="Yes. The website owner can edit the files and publish an updated version.">نعم، يمكن لمسؤول الموقع تعديل الملف ونشر النسخة الجديدة.</p></details>
-</section>
-<section class="wrap" id="contact"><div class="section-head"><h2 data-ar="التواصل" data-en="Contact">التواصل</h2><p data-ar="أضف رابط دعوة ديسكورد الرسمي هنا." data-en="Add your official Discord invite link here.">أضف رابط دعوة ديسكورد الرسمي هنا.</p></div><div class="actions"><a class="btn secondary" href="#" onclick="alert(document.documentElement.lang==='ar'?'أضف رابط دعوة الديسكورد داخل ملف index.html أولاً.':'Add your Discord invite URL in index.html first.');return false" data-ar="دخول الديسكورد" data-en="Join Discord">دخول الديسكورد</a></div></section>
+<section class="wrap" id="penalties"><div class="head"><h2>⚖️ <span data-ar="المخالفات والعقوبات" data-en="Violations and Penalties">المخالفات والعقوبات</span></h2><p data-ar="تحدد الإدارة الإجراء المناسب بحسب نوع المخالفة وتكرارها وظروفها." data-en="Staff determine the appropriate response based on the violation, repetition, and context.">تحدد الإدارة الإجراء المناسب بحسب نوع المخالفة وتكرارها وظروفها.</p></div>
+<div class="grid">
+<div class="card"><h3 data-ar="تنبيه أو إنذار" data-en="Warning">تنبيه أو إنذار</h3><p data-ar="للمخالفات البسيطة أو غير المتعمدة بحسب الحالة." data-en="For minor or unintentional violations, depending on context.">للمخالفات البسيطة أو غير المتعمدة بحسب الحالة.</p></div>
+<div class="card"><h3 data-ar="إجراء مؤقت" data-en="Temporary Action">إجراء مؤقت</h3><p data-ar="قد يشمل تقييد بعض الصلاحيات أو إيقافاً مؤقتاً وفق جسامة المخالفة." data-en="May include restricted permissions or temporary suspension for more serious violations.">قد يشمل تقييد بعض الصلاحيات أو إيقافاً مؤقتاً وفق جسامة المخالفة.</p></div>
+<div class="card"><h3 data-ar="إجراء نهائي" data-en="Permanent Action">إجراء نهائي</h3><p data-ar="للمخالفات الجسيمة أو التكرار المستمر، بعد مراجعة الإدارة." data-en="For severe or repeated violations after management review.">للمخالفات الجسيمة أو التكرار المستمر، بعد مراجعة الإدارة.</p></div>
+</div><div class="note" data-ar="يحق للعضو تقديم اعتراض عبر التذكرة الرسمية. هذه سياسة عامة، ويجب اعتماد مدد العقوبات وتفاصيلها من إدارة السيرفر قبل النشر النهائي." data-en="Members may appeal through an official ticket. This is a general policy; exact penalty durations and details must be approved by server management before final publication.">يحق للعضو تقديم اعتراض عبر التذكرة الرسمية. هذه سياسة عامة، ويجب اعتماد مدد العقوبات وتفاصيلها من إدارة السيرفر قبل النشر النهائي.</div></section>
+
+<section class="wrap" id="applications"><div class="head"><h2>📝 <span data-ar="التقديمات والتفعيل" data-en="Applications and Activation">التقديمات والتفعيل</span></h2></div><div class="panel"><ul>
+<li data-ar="تابع إعلانات السيرفر لمعرفة فتح التقديمات ومواعيد التفعيل." data-en="Follow server announcements for application openings and activation times.">تابع إعلانات السيرفر لمعرفة فتح التقديمات ومواعيد التفعيل.</li>
+<li data-ar="قدّم معلومات صحيحة وكاملة، وتجنب تكرار الطلب نفسه." data-en="Provide accurate and complete information; avoid duplicate applications.">قدّم معلومات صحيحة وكاملة، وتجنب تكرار الطلب نفسه.</li>
+<li data-ar="احترام فريق الاستقبال والإدارة شرط طوال عملية التقديم." data-en="Respect the application team and staff throughout the process.">احترام فريق الاستقبال والإدارة شرط طوال عملية التقديم.</li>
+<li data-ar="إرسال الطلب لا يعني القبول؛ القرار النهائي يعود للفريق المختص." data-en="Submitting an application does not guarantee acceptance; the relevant team makes the final decision.">إرسال الطلب لا يعني القبول؛ القرار النهائي يعود للفريق المختص.</li>
+</ul><p class="note" data-ar="أضف هنا روابط التقديم والتفعيل الرسمية من ديسكورد." data-en="Add your official Discord application and activation links here.">أضف هنا روابط التقديم والتفعيل الرسمية من ديسكورد.</p></div></section>
+
+<section class="wrap" id="updates"><div class="head"><h2>📢 <span data-ar="التحديثات" data-en="Updates">التحديثات</span></h2></div><div class="panel"><p data-ar="سيتم نشر أي تعديل على القوانين هنا. يرجى مراجعة الدليل بشكل دوري." data-en="Rule changes will be posted here. Please review this guide regularly.">سيتم نشر أي تعديل على القوانين هنا. يرجى مراجعة الدليل بشكل دوري.</p></div></section>
 </main>
-<footer><div class="wrap">© <span id="year"></span> RESPECT TOWN | RT — <span data-ar="جميع الحقوق محفوظة." data-en="All rights reserved.">جميع الحقوق محفوظة.</span></div></footer>
+<footer>© <span id="year"></span> RESPECT TOWN | RT — <span data-ar="جميع الحقوق محفوظة." data-en="All rights reserved.">جميع الحقوق محفوظة.</span></footer>
 <script>
-const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navLinks');
-menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-let english=false;
-document.getElementById('langBtn').addEventListener('click',()=>{
- english=!english;document.documentElement.lang=english?'en':'ar';document.documentElement.dir=english?'ltr':'rtl';
- document.getElementById('langBtn').textContent=english?'العربية':'English';
- document.querySelectorAll('[data-ar]').forEach(el=>el.textContent=english?el.dataset.en:el.dataset.ar);
-});
+const nav=document.getElementById('nav');document.getElementById('menu').onclick=()=>nav.classList.toggle('open');nav.querySelectorAll('a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
+let en=false;document.getElementById('lang').onclick=()=>{en=!en;document.documentElement.lang=en?'en':'ar';document.documentElement.dir=en?'ltr':'rtl';document.getElementById('lang').textContent=en?'العربية':'English';document.querySelectorAll('[data-ar]').forEach(x=>x.textContent=en?x.dataset.en:x.dataset.ar)};
 document.getElementById('year').textContent=new Date().getFullYear();
-</script>
-</body></html>
+</script></body></html>
